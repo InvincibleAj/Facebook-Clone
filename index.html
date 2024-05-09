@@ -1,602 +1,605 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Facebook Clone</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
 
-  <body>
-    <div class="box">
-       <div class="navBar">
-        <div class="navBarLeft">
-          <div >
-            <div class="facebookLogo logo">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                <path
-                  d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"
-                />
-              </svg>
-            </div>
-          </div>
-          <div class="SearchBardiv">
-            <span class="searchSVG">
-            <svg viewBox="0 0 16 16" width="16" height="16" fill="currentColor"><g fill-rule="evenodd" transform="translate(-448 -544)"><g fill-rule="nonzero"><path d="M10.743 2.257a6 6 0 1 1-8.485 8.486 6 6 0 0 1 8.485-8.486zm-1.06 1.06a4.5 4.5 0 1 0-6.365 6.364 4.5 4.5 0 0 0 6.364-6.363z" transform="translate(448 544)"></path><path d="M10.39 8.75a2.94 2.94 0 0 0-.199.432c-.155.417-.23.849-.172 1.284.055.415.232.794.54 1.103a.75.75 0 0 0 1.112-1.004l-.051-.057a.39.39 0 0 1-.114-.24c-.021-.155.014-.356.09-.563.031-.081.06-.145.08-.182l.012-.022a.75.75 0 1 0-1.299-.752z" transform="translate(448 544)"></path><path d="M9.557 11.659c.038-.018.09-.04.15-.064.207-.077.408-.112.562-.092.08.01.143.034.198.077l.041.036a.75.75 0 0 0 1.06-1.06 1.881 1.881 0 0 0-1.103-.54c-.435-.058-.867.018-1.284.175-.189.07-.336.143-.433.2a.75.75 0 0 0 .624 1.356l.066-.027.12-.061z" transform="translate(448 544)"></path><path d="m13.463 15.142-.04-.044-3.574-4.192c-.599-.703.355-1.656 1.058-1.057l4.191 3.574.044.04c.058.059.122.137.182.24.249.425.249.96-.154 1.41l-.057.057c-.45.403-.986.403-1.411.154a1.182 1.182 0 0 1-.24-.182zm.617-.616.444-.444a.31.31 0 0 0-.063-.052c-.093-.055-.263-.055-.35.024l.208.232.207-.206.006.007-.22.257-.026-.024.033-.034.025.027-.257.22-.007-.007zm-.027-.415c-.078.088-.078.257-.023.35a.31.31 0 0 0 .051.063l.205-.204-.233-.209z" transform="translate(448 544)"></path></g></g></svg>
-            </span>
-            <input type="text" class="SearchBar" value="Search Facebook" textArea="hidden" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Facebook Clone</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="box">
+    <div class="navBar">
+      <div class="navBarLeft">
+        <div>
+          <div class="facebookLogo logo">
+            <img width="36" height="36" src="./SVGs/Facebook logo.svg" alt="fb-logo" />
           </div>
         </div>
-        <div class="navBarCenter">
-          <div class="Home nBC">
-            <input type="button" />
-            <svg
-              viewBox="0 0 28 28"
-              class="x1lliihq x1k90msu x2h7rmj x1qfuztq x19dipnz"
-              style="--color: var(--primary-button-background)"
-              fill="currentColor"
-              height="28"
-              width="28"
-            >
-              <path
-                d="M25.825 12.29C25.824 12.289 25.823 12.288 25.821 12.286L15.027 2.937C14.752 2.675 14.392 2.527 13.989 2.521 13.608 2.527 13.248 2.675 13.001 2.912L2.175 12.29C1.756 12.658 1.629 13.245 1.868 13.759 2.079 14.215 2.567 14.479 3.069 14.479L5 14.479 5 23.729C5 24.695 5.784 25.479 6.75 25.479L11 25.479C11.552 25.479 12 25.031 12 24.479L12 18.309C12 18.126 12.148 17.979 12.33 17.979L15.67 17.979C15.852 17.979 16 18.126 16 18.309L16 24.479C16 25.031 16.448 25.479 17 25.479L21.25 25.479C22.217 25.479 23 24.695 23 23.729L23 14.479 24.931 14.479C25.433 14.479 25.921 14.215 26.132 13.759 26.371 13.245 26.244 12.658 25.825 12.29"
-              ></path>
-            </svg>
-          </div>
-          <div class="Videos nBC">
-            <svg
-              viewBox="0 0 28 28"
-              class="x1lliihq x1k90msu x2h7rmj x1qfuztq x19dipnz"
-              fill="currentColor"
-              height="28"
-              width="28"
-              style="--color: var(--secondary-icon)"
-            >
-              <path
-                d="M8.75 25.25C8.336 25.25 8 24.914 8 24.5 8 24.086 8.336 23.75 8.75 23.75L19.25 23.75C19.664 23.75 20 24.086 20 24.5 20 24.914 19.664 25.25 19.25 25.25L8.75 25.25ZM17.163 12.846 12.055 15.923C11.591 16.202 11 15.869 11 15.327L11 9.172C11 8.631 11.591 8.297 12.055 8.576L17.163 11.654C17.612 11.924 17.612 12.575 17.163 12.846ZM21.75 20.25C22.992 20.25 24 19.242 24 18L24 6.5C24 5.258 22.992 4.25 21.75 4.25L6.25 4.25C5.008 4.25 4 5.258 4 6.5L4 18C4 19.242 5.008 20.25 6.25 20.25L21.75 20.25ZM21.75 21.75 6.25 21.75C4.179 21.75 2.5 20.071 2.5 18L2.5 6.5C2.5 4.429 4.179 2.75 6.25 2.75L21.75 2.75C23.821 2.75 25.5 4.429 25.5 6.5L25.5 18C25.5 20.071 23.821 21.75 21.75 21.75Z"
-              ></path>
-            </svg>
-          </div>
-          <div class="Marketplace nBC">
-            <svg
-              viewBox="0 0 28 28"
-              class="x1lliihq x1k90msu x2h7rmj x1qfuztq x19dipnz"
-              fill="currentColor"
-              height="28"
-              width="28"
-              style="--color: var(--primary-button-background)"
-            >
-              <path
-                d="m10.995,23.625l0,-5.8c0,-0.526 0.424,-0.95 0.95,-0.95l4.09,0c0.526,0 0.95,0.424 0.95,0.95l0,5.8l4.98,0c0.43,0 0.78,-0.348 0.78,-0.78l0,-8.264c-0.124,-0.073 -0.242,-0.159 -0.35,-0.256l-0.41,-0.37c-0.19,-0.17 -0.45,-0.17 -0.64,0l-0.17,0.15c-0.55,0.49 -1.25,0.76 -1.97,0.76l-0.23,0c-0.71,0 -1.41,-0.26 -1.96,-0.75l-0.19,-0.17c-0.19,-0.17 -0.45,-0.17 -0.64,0l-0.19,0.17c-0.55,0.49 -1.25,0.76 -1.96,0.76l-0.14,0c-0.71,0 -1.4,-0.26 -1.94,-0.74l-0.22,-0.19c-0.19,-0.17 -0.45,-0.17 -0.64,0l-0.18,0.16c-0.55,0.49 -1.25,0.76 -1.97,0.76l-0.18,0c-0.72,0 -1.41,-0.26 -1.96,-0.75l-0.2,-0.17c-0.18,-0.17 -0.44,-0.17 -0.63,0l-0.48,0.43c-0.076,0.067 -0.156,0.129 -0.24,0.183l0,8.287c0,0.43 0.348,0.78 0.78,0.78l4.96,0zm13.25,-8.795l0,8.015c0,1.262 -1.023,2.28 -2.28,2.28l-15.93,0c-1.262,0 -2.28,-1.023 -2.28,-2.28l0,-7.989c-0.993,-0.139 -1.76,-1.038 -1.76,-2.131l0,-2.35c0,-0.28 0.22,-0.5 0.5,-0.5l23.01,0c0.28,0 0.5,0.22 0.5,0.5l0,2.18c0,1.124 -0.756,2.063 -1.76,2.275zm0.71,-5.955l-21.93,0c-0.35,0 -0.59,-0.36 -0.46,-0.69l1.82,-4.49c0.19,-0.49 0.65,-0.82 1.17,-0.82l16.87,0c0.52,0 0.98,0.33 1.17,0.83l1.82,4.48c0.14,0.33 -0.11,0.69 -0.46,0.69z"
-              ></path>
-            </svg>
-          </div>
-          <div class="Groups nBC">
-            <svg
-              viewBox="0 0 28 28"
-              class="x1lliihq x1k90msu x2h7rmj x1qfuztq x19dipnz"
-              
-              fill="currentColor"
-              height="28"
-              width="28"
-            >
-              <path
-                d="M25.5 14C25.5 7.649 20.351 2.5 14 2.5 7.649 2.5 2.5 7.649 2.5 14 2.5 20.351 7.649 25.5 14 25.5 20.351 25.5 25.5 20.351 25.5 14ZM27 14C27 21.18 21.18 27 14 27 6.82 27 1 21.18 1 14 1 6.82 6.82 1 14 1 21.18 1 27 6.82 27 14ZM7.479 14 7.631 14C7.933 14 8.102 14.338 7.934 14.591 7.334 15.491 6.983 16.568 6.983 17.724L6.983 18.221C6.983 18.342 6.99 18.461 7.004 18.578 7.03 18.802 6.862 19 6.637 19L6.123 19C5.228 19 4.5 18.25 4.5 17.327 4.5 15.492 5.727 14 7.479 14ZM20.521 14C22.274 14 23.5 15.492 23.5 17.327 23.5 18.25 22.772 19 21.878 19L21.364 19C21.139 19 20.97 18.802 20.997 18.578 21.01 18.461 21.017 18.342 21.017 18.221L21.017 17.724C21.017 16.568 20.667 15.491 20.067 14.591 19.899 14.338 20.067 14 20.369 14L20.521 14ZM8.25 13C7.147 13 6.25 11.991 6.25 10.75 6.25 9.384 7.035 8.5 8.25 8.5 9.465 8.5 10.25 9.384 10.25 10.75 10.25 11.991 9.353 13 8.25 13ZM19.75 13C18.647 13 17.75 11.991 17.75 10.75 17.75 9.384 18.535 8.5 19.75 8.5 20.965 8.5 21.75 9.384 21.75 10.75 21.75 11.991 20.853 13 19.75 13ZM15.172 13.5C17.558 13.5 19.5 15.395 19.5 17.724L19.5 18.221C19.5 19.202 18.683 20 17.677 20L10.323 20C9.317 20 8.5 19.202 8.5 18.221L8.5 17.724C8.5 15.395 10.441 13.5 12.828 13.5L15.172 13.5ZM16.75 9C16.75 10.655 15.517 12 14 12 12.484 12 11.25 10.655 11.25 9 11.25 7.15 12.304 6 14 6 15.697 6 16.75 7.15 16.75 9Z"
-              ></path>
-            </svg>
-          </div>
-          <div class="Gaming nBC">
-            <svg
-              viewBox="0 0 24 24"
-              width="28"
-              height="28"
-              fill="currentColor"
-              class="x19dipnz x1lliihq x1k90msu x2h7rmj x1qfuztq"
-              style="--color: var(--secondary-icon)"
-            >
-              <g fill-rule="evenodd" transform="translate(-444 -204)">
-                <g>
+        <div class="SearchBardiv">
+          <span class="searchSVG">
+            <svg viewBox="0 0 16 16" width="16" height="16" fill="currentColor">
+              <g fill-rule="evenodd" transform="translate(-448 -544)">
+                <g fill-rule="nonzero">
                   <path
-                    fill-rule="nonzero"
-                    d="M98.5 5.75v4a.75.75 0 1 0 1.5 0v-4a.75.75 0 1 0-1.5 0z"
-                    transform="translate(351.5 208.5)"
-                  ></path>
+                    d="M10.743 2.257a6 6 0 1 1-8.485 8.486 6 6 0 0 1 8.485-8.486zm-1.06 1.06a4.5 4.5 0 1 0-6.365 6.364 4.5 4.5 0 0 0 6.364-6.363z"
+                    transform="translate(448 544)"></path>
                   <path
-                    fill-rule="nonzero"
-                    d="M97.25 8.5h4a.75.75 0 1 0 0-1.5h-4a.75.75 0 1 0 0 1.5z"
-                    transform="translate(351.5 208.5)"
-                  ></path>
+                    d="M10.39 8.75a2.94 2.94 0 0 0-.199.432c-.155.417-.23.849-.172 1.284.055.415.232.794.54 1.103a.75.75 0 0 0 1.112-1.004l-.051-.057a.39.39 0 0 1-.114-.24c-.021-.155.014-.356.09-.563.031-.081.06-.145.08-.182l.012-.022a.75.75 0 1 0-1.299-.752z"
+                    transform="translate(448 544)"></path>
                   <path
-                    fill-rule="nonzero"
-                    d="M109.5 14.5h-10a7 7 0 0 1 0-14h10a7 7 0 0 1 0 14zm0-1.5a5.5 5.5 0 0 0 0-11h-10a5.5 5.5 0 0 0 0 11h10z"
-                    transform="translate(351.5 208.5)"
-                  ></path>
+                    d="M9.557 11.659c.038-.018.09-.04.15-.064.207-.077.408-.112.562-.092.08.01.143.034.198.077l.041.036a.75.75 0 0 0 1.06-1.06 1.881 1.881 0 0 0-1.103-.54c-.435-.058-.867.018-1.284.175-.189.07-.336.143-.433.2a.75.75 0 0 0 .624 1.356l.066-.027.12-.061z"
+                    transform="translate(448 544)"></path>
                   <path
-                    d="M109 9.25a1.25 1.25 0 1 1-2.5 0 1.25 1.25 0 0 1 2.5 0m3-3a1.25 1.25 0 1 1-2.5 0 1.25 1.25 0 0 1 2.5 0"
-                    transform="translate(351.5 208.5)"
-                  ></path>
+                    d="m13.463 15.142-.04-.044-3.574-4.192c-.599-.703.355-1.656 1.058-1.057l4.191 3.574.044.04c.058.059.122.137.182.24.249.425.249.96-.154 1.41l-.057.057c-.45.403-.986.403-1.411.154a1.182 1.182 0 0 1-.24-.182zm.617-.616.444-.444a.31.31 0 0 0-.063-.052c-.093-.055-.263-.055-.35.024l.208.232.207-.206.006.007-.22.257-.026-.024.033-.034.025.027-.257.22-.007-.007zm-.027-.415c-.078.088-.078.257-.023.35a.31.31 0 0 0 .051.063l.205-.204-.233-.209z"
+                    transform="translate(448 544)"></path>
                 </g>
               </g>
             </svg>
-          </div>
-        </div>
-        <div class="navBarRight">
-          <div class="Menu nBR">
-            <svg
-              viewBox="0 0 44 44"
-              width="20"
-              height="20"
-              fill="currentColor"
-              class="x19dipnz x1lliihq x1k90msu x2h7rmj x1qfuztq"
-              style="--color: var(--accent)"
-            >
-              <circle cx="7" cy="7" r="6"></circle>
-              <circle cx="22" cy="7" r="6"></circle>
-              <circle cx="37" cy="7" r="6"></circle>
-              <circle cx="7" cy="22" r="6"></circle>
-              <circle cx="22" cy="22" r="6"></circle>
-              <circle cx="37" cy="22" r="6"></circle>
-              <circle cx="7" cy="37" r="6"></circle>
-              <circle cx="22" cy="37" r="6"></circle>
-              <circle cx="37" cy="37" r="6"></circle>
-            </svg>
-          </div>
-          <div class="Messanger nBR">
-            <svg
-              viewBox="0 0 12 13"
-              width="20"
-              height="20"
-              fill="currentColor"
-              class="x19dipnz x1lliihq x1k90msu x2h7rmj x1qfuztq"
-              style="--color: var(--primary-icon)"
-            >
-              <g fill-rule="evenodd" transform="translate(-450 -1073)">
-                <path
-                  d="m459.603 1077.948-1.762 2.851a.89.89 0 0 1-1.302.245l-1.402-1.072a.354.354 0 0 0-.433.001l-1.893 1.465c-.253.196-.583-.112-.414-.386l1.763-2.851a.89.89 0 0 1 1.301-.245l1.402 1.072a.354.354 0 0 0 .434-.001l1.893-1.465c.253-.196.582.112.413.386M456 1073.5c-3.38 0-6 2.476-6 5.82 0 1.75.717 3.26 1.884 4.305.099.087.158.21.162.342l.032 1.067a.48.48 0 0 0 .674.425l1.191-.526a.473.473 0 0 1 .32-.024c.548.151 1.13.231 1.737.231 3.38 0 6-2.476 6-5.82 0-3.344-2.62-5.82-6-5.82"
-                ></path>
-              </g>
-            </svg>
-          </div>
-          <div class="Notifications nBR">
-            <svg
-              viewBox="0 0 28 28"
-              alt=""
-              class="x1lliihq x1k90msu x2h7rmj x1qfuztq x19dipnz"
-              style="--color: var(--primary-icon)"
-              fill="currentColor"
-              height="20"
-              width="20"
-            >
-              <path
-                d="M7.847 23.488C9.207 23.488 11.443 23.363 14.467 22.806 13.944 24.228 12.581 25.247 10.98 25.247 9.649 25.247 8.483 24.542 7.825 23.488L7.847 23.488ZM24.923 15.73C25.17 17.002 24.278 18.127 22.27 19.076 21.17 19.595 18.724 20.583 14.684 21.369 11.568 21.974 9.285 22.113 7.848 22.113 7.421 22.113 7.068 22.101 6.79 22.085 4.574 21.958 3.324 21.248 3.077 19.976 2.702 18.049 3.295 17.305 4.278 16.073L4.537 15.748C5.2 14.907 5.459 14.081 5.035 11.902 4.086 7.022 6.284 3.687 11.064 2.753 15.846 1.83 19.134 4.096 20.083 8.977 20.506 11.156 21.056 11.824 21.986 12.355L21.986 12.356 22.348 12.561C23.72 13.335 24.548 13.802 24.923 15.73Z"
-              ></path>
-            </svg>
-          </div>
-          <div class="Account nBR">
-            <image
-              style="height: 40px; width: 40px"
-              x="0"
-              y="0"
-              height="100%"
-              preserveAspectRatio="xMidYMid slice"
-              width="100%"
-              xlink:href="https://scontent.fbho3-2.fna.fbcdn.net/v/t39.30808-1/349137387_774992457335355_4576806874963040632_n.jpg?stp=cp0_dst-jpg_p60x60&amp;_nc_cat=104&amp;ccb=1-7&amp;_nc_sid=5f2048&amp;_nc_ohc=RqRkUMVZDmYAX9mPJ25&amp;_nc_ht=scontent.fbho3-2.fna&amp;oh=00_AfAu35m6aMO37Iw52eSg5mzZ26LqVYIDROpUWi6iMkq4gQ&amp;oe=65FEF21B"
-            >
-            </image>
-          </div>
+          </span>
+          <input type="text" class="SearchBar" value="Search Facebook" textArea="hidden" />
         </div>
       </div>
-      <div class="container">
-        <div class="bodyLeft">
-          <div class="nameImage">
-            <div class="logo">
-              <img class="logo" width="36px" height="36px"src="https://scontent.fbho6-1.fna.fbcdn.net/v/t39.30808-1/349137387_774992457335355_4576806874963040632_n.jpg?stp=cp0_dst-jpg_p60x60&_nc_cat=104&ccb=1-7&_nc_sid=5f2048&_nc_ohc=hozZd6RgCAAAX-PXQQU&_nc_ht=scontent.fbho6-1.fna&oh=00_AfARqTW8NNhufelk1F0fqeYzqnj9uqs6n2CdsVg-8IhoHQ&oe=6600EC5B"/>
-            </div>
-            <div class="nameHold UserNameHold">Ajay Rajput</div>
-          </div>
-
-          <div class="nameImage">
-            <div class="logo">
-              <i data-visualcompletion="css-img" class="left-logo" style="background-image:url('https://static.xx.fbcdn.net/rsrc.php/v3/y6/r/MXx87JcFKzH.png');background-position:0 -304px;background-size:38px 570px;width:36px;height:36px;background-repeat:no-repeat;display:inline-block"></i>
-
-
-            </div>
-            <div class="nameHold">Friends</div>
-          </div>
-
-          <div class="nameImage">
-            <div class="logo">
-              <i data-visualcompletion="css-img" class="left-logo" style="background-image:url('https://static.xx.fbcdn.net/rsrc.php/v3/y6/r/MXx87JcFKzH.png');background-position:0 -456px;background-size:38px 570px;width:36px;height:36px;background-repeat:no-repeat;display:inline-block"></i>
-
-              <!-- <i data-visualcompletion="css-img" class="" style="background-image:url('https://static.xx.fbcdn.net/rsrc.php/v3/y6/r/MXx87JcFKzH.png');background-position:0 -38px;background-size:38px 570px;width:36px;height:36px;background-repeat:no-repeat;display:inline-block"></i> -->
-            </div>             <div class="nameHold">Memories</div>
-          </div>
-
-          <div class="nameImage">
-            <div class="logo">
-              <i data-visualcompletion="css-img" class="" style="background-image:url('https://static.xx.fbcdn.net/rsrc.php/v3/y6/r/MXx87JcFKzH.png');background-position:0 -190px;background-size:38px 570px;width:36px;height:36px;background-repeat:no-repeat;display:inline-block"></i>
-            </div>
-            <div class="nameHold">Saved</div>
-          </div>
-
-          <div class="nameImage">
-            <div class="logo">
-              <i data-visualcompletion="css-img" class="" style="background-image:url('https://static.xx.fbcdn.net/rsrc.php/v3/y6/r/MXx87JcFKzH.png');background-position:0 -38px;background-size:38px 570px;width:36px;height:36px;background-repeat:no-repeat;display:inline-block"></i>
-            </div>
-            <div class="nameHold">Groups</div>
-          </div>
-
-          <div class="nameImage">
-            <div class="logo">
-              <i data-visualcompletion="css-img" class="" style="background-image:url('https://static.xx.fbcdn.net/rsrc.php/v3/y6/r/MXx87JcFKzH.png');background-position:0 -532px;background-size:38px 570px;width:36px;height:36px;background-repeat:no-repeat;display:inline-block"></i>
-            </div>
-            <div class="nameHold">Videos</div>
-          </div>
-
-          <div class="nameImage">
-            <div class="logo">
-              <i data-visualcompletion="css-img" class="" style="background-image:url('https://static.xx.fbcdn.net/rsrc.php/v3/y6/r/MXx87JcFKzH.png');background-position:0 -418px;background-size:38px 570px;width:36px;height:36px;background-repeat:no-repeat;display:inline-block"></i>
-            </div>
-            <div class="nameHold">Marketplace</div>
-          </div>
-
-          <div class="nameImage">
-            <div class="logo">
-              <img draggable="false" height="36" width="36" alt="" class="xz74otr" referrerpolicy="origin-when-cross-origin" src="https://static.xx.fbcdn.net/rsrc.php/v3/yT/r/3dN1QwOLden.png">
-            </div>
-            <div class="nameHold">Feeds</div>
-          </div>
-
-          <div class="nameImage">
-            <div class="logo">
-              <i data-visualcompletion="css-img" class="" style="background-image:url('https://static.xx.fbcdn.net/rsrc.php/v3/yH/r/vWSUA-u7jLw.png');background-position:0 -38px;background-size:38px 76px;width:36px;height:36px;background-repeat:no-repeat;display:inline-block"></i>
-            </div>
-            <div class="nameHold">Events</div>
-          </div>
-          <div class="nameImage">
-            <div class="logo">
-              <img draggable="false" height="36" width="36" alt="" class="xz74otr" referrerpolicy="origin-when-cross-origin" src="https://static.xx.fbcdn.net/rsrc.php/v3/yy/r/xH4w-lk44we.png">
-            </div>
-            <div class="nameHold">Facebook Pay</div>
-          </div>
-          <div class="nameImage">
-            <div class="logo">
-              <img draggable="false" height="36" width="36" alt="" class="xz74otr" referrerpolicy="origin-when-cross-origin" src="https://static.xx.fbcdn.net/rsrc.php/v3/yD/r/tKwWVioirmj.png">
-            </div>
-            
-
-            <div class="nameHold">Climate Science centre</div>
-          </div>
-          <div class="nameImage">
-            <div class="logo">
-              <i data-visualcompletion="css-img" class="" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/y6/r/MXx87JcFKzH.png&quot;); background-position: 0px -342px; background-size: 38px 570px; width: 36px; height: 36px; background-repeat: no-repeat; display: inline-block;"></i>
-            </div>
-            <div class="nameHold">Fundraisers</div>
-          </div>
-
-          <div class="nameImage">
-            <div class="logo">
-              <img draggable="false" height="36" width="36" alt="" class="xz74otr" referrerpolicy="origin-when-cross-origin" src="https://static.xx.fbcdn.net/rsrc.php/v3/yZ/r/tx2VFwUKc-K.png">
-            </div>
-            <div class="nameHold">Ads Manager</div>
-          </div>
-
-          <div class="Shortcuts">
-            <h3>
-              Shortcuts
-            </h3>
-
-            <div class="nameImage">
-              <div class="logo"><image style="height:36px;width:36px" x="0" y="0" height="100%" preserveAspectRatio="xMidYMid slice" width="100%" xlink:href="https://scontent.fbho6-1.fna.fbcdn.net/v/t39.30808-6/313428154_2703876849746108_1514942583976182679_n.jpg?stp=c11.0.64.64a_cp0_dst-jpg_p64x64&amp;_nc_cat=100&amp;ccb=1-7&amp;_nc_sid=5f2048&amp;_nc_ohc=MKdq3f2tP38AX-QztmO&amp;_nc_ht=scontent.fbho6-1.fna&amp;oh=00_AfDI4eAhYFnChPPmqls91ya8Ko74J5Dd-FJESl9L7LQczQ&amp;oe=6604F0CF"></image></div>
-              <div class="nameHold">Xgroup</div>
-            </div>
-
-            <div class="nameImage">
-              <div class="logo"><image style="height:36px;width:36px" x="0" y="0" height="100%" preserveAspectRatio="xMidYMid slice" width="100%" xlink:href="https://scontent.fbho6-1.fna.fbcdn.net/v/t39.30808-6/313428154_2703876849746108_1514942583976182679_n.jpg?stp=c11.0.64.64a_cp0_dst-jpg_p64x64&amp;_nc_cat=100&amp;ccb=1-7&amp;_nc_sid=5f2048&amp;_nc_ohc=MKdq3f2tP38AX-QztmO&amp;_nc_ht=scontent.fbho6-1.fna&amp;oh=00_AfDI4eAhYFnChPPmqls91ya8Ko74J5Dd-FJESl9L7LQczQ&amp;oe=6604F0CF"></image></div>
-              <div class="nameHold">8ballpool</div>
-            </div>
-
-            <div class="nameImage">
-              <div class="logo"><image style="height:36px;width:36px" x="0" y="0" height="100%" preserveAspectRatio="xMidYMid slice" width="100%" xlink:href="https://scontent.fbho6-1.fna.fbcdn.net/v/t39.30808-6/313428154_2703876849746108_1514942583976182679_n.jpg?stp=c11.0.64.64a_cp0_dst-jpg_p64x64&amp;_nc_cat=100&amp;ccb=1-7&amp;_nc_sid=5f2048&amp;_nc_ohc=MKdq3f2tP38AX-QztmO&amp;_nc_ht=scontent.fbho6-1.fna&amp;oh=00_AfDI4eAhYFnChPPmqls91ya8Ko74J5Dd-FJESl9L7LQczQ&amp;oe=6604F0CF"></image></div>
-              <div class="nameHold">Yshortcut</div>
-            </div>
-
-            <div class="nameImage">
-              <div class="logo"><image style="height:36px;width:36px" x="0" y="0" height="100%" preserveAspectRatio="xMidYMid slice" width="100%" xlink:href="https://scontent.fbho6-1.fna.fbcdn.net/v/t39.30808-6/313428154_2703876849746108_1514942583976182679_n.jpg?stp=c11.0.64.64a_cp0_dst-jpg_p64x64&amp;_nc_cat=100&amp;ccb=1-7&amp;_nc_sid=5f2048&amp;_nc_ohc=MKdq3f2tP38AX-QztmO&amp;_nc_ht=scontent.fbho6-1.fna&amp;oh=00_AfDI4eAhYFnChPPmqls91ya8Ko74J5Dd-FJESl9L7LQczQ&amp;oe=6604F0CF"></image></div>
-              <div class="nameHold">Zshortcut</div>
-            </div>
-          </div>
+      <div class="navBarCenter">
+        <div class="Home nBC">
+          <img width="28" height="28" src="./SVGs/homeSvg.svg" alt="homeSvg-logo" />
         </div>
-        <div class="bodyCenter">
-          <div class="stories">
-            <div class="story story1">
-              <div class="storyImage">
-                <img alt="" class="storyImage" referrerpolicy="origin-when-cross-origin" src="https://scontent.fbho3-2.fna.fbcdn.net/v/t39.30808-1/349137387_774992457335355_4576806874963040632_n.jpg?stp=dst-jpg_p240x240&amp;_nc_cat=104&amp;ccb=1-7&amp;_nc_sid=5f2048&amp;_nc_ohc=SOZrygSjaYUAX_4ELwF&amp;_nc_ht=scontent.fbho3-2.fna&amp;oh=00_AfDZ8rdZUoUwqcHJ8Pv_zND2kErJipzuGqj74QS_LYSTTQ&amp;oe=6604E0DB">
-              </div>
-              <div class="createStory">
-                <div class="createStory1">create story</div>
-              </div>
-              <div class="plusIcon">
-                <svg
-                  viewBox="0 0 20 20"
-                  width="32"
-                  height="32"
-                  fill="currentColor"
-                  class=""
-                  style="--color: var(--always-white)"
-                >
-                  <g fill-rule="evenodd" transform="translate(-446 -350)">
-                    <g fill-rule="nonzero">
-                      <path
-                        d="M95 201.5h13a1 1 0 1 0 0-2H95a1 1 0 1 0 0 2z"
-                        transform="translate(354.5 159.5)"
-                      ></path>
-                      <path
-                        d="M102.5 207v-13a1 1 0 1 0-2 0v13a1 1 0 1 0 2 0z"
-                        transform="translate(354.5 159.5)"
-                      ></path>
-                    </g>
-                  </g>
-                </svg>
-              </div>
-            </div>
-            <div class="story story2">
-              <div class="storyImage1"></div>
-              <div class="storyLogo"></div>
-            </div>
-            <div class="story story3">
-              <div class="storyImage1"></div>
-              <div class="storyLogo"></div>
-            </div>
-            <div class="story story4">
-              <div class="storyImage1"></div>
-              <div class="storyLogo"></div>
-            </div>
-            <div class="story story5">
-              <div class="storyImage1"></div>
-              <div class="storyLogo"></div>
-            </div>
-          </div>
-          <div class="createPost">
-            <div class="postBarUP">
-              <div class="logo">
-                <image
-                  style="height: 36px; width: 36px;"
-                  height="100%"
-                  width="100%"
-                  xlink:href="https://scontent.fbho1-4.fna.fbcdn.net/v/t39.30808-1/349137387_774992457335355_4576806874963040632_n.jpg?stp=cp0_dst-jpg_p60x60&amp;_nc_cat=104&amp;ccb=1-7&amp;_nc_sid=5f2048&amp;_nc_ohc=hozZd6RgCAAAX9AkNfe&amp;_nc_ht=scontent.fbho1-4.fna&amp;oh=00_AfDUBjdEP1gvG9VhIgat2arAy3m2tCwuCFXyE8cOFYf5sg&amp;oe=65FEF21B"
-                ></image>
-              </div>
-              <input
-                type="text"
-                class="postBarUPWriting"
-                value="What's on your mind, Ajay? "
-              />
-            </div>
-            <div class="postBarDown"> 
-              <div class="pbdButtonLogo" role="button">
-                <img
-                  src="https://static.xx.fbcdn.net/rsrc.php/v3/yF/r/v1iF2605Cb5.png"
-                  width="24"
-                  height="24"
-                />
-                <button class="pbd-button">Live video</button>
-              </div>
-              <div class="pbdButtonLogo">
-                <img 
-                  src="https://static.xx.fbcdn.net/rsrc.php/v3/yC/r/a6OjkIIE-R0.png"
-                  width="24"
-                  height="24"
-                />
-                <button class="pbd-button">Photo/video</button>
-              </div>
-              <div class="pbdButtonLogo">
-                <img
-                  src="https://static.xx.fbcdn.net/rsrc.php/v3/yk/r/yMDS19UDsWe.png"
-                  width="24"
-                  height="24"
-                />
-                <button class="pbd-button">feeling/activity</button>
-              </div>
-            </div>
-          </div>
-          <div class="postsByPeople">
-            <div class="postsByPeopleInfo">
-              <div class="postsByPeopleInfoProfile">
-                <img
-                  class="ApostsByPeopleInfoProfile"
-                  width="36"
-                  height="36"
-                  src="https://scontent.fbho1-1.fna.fbcdn.net/v/t39.30808-6/284510213_616020213432598_6574125421532223638_n.jpg?stp=c16.0.64.64a_cp0_dst-jpg_p64x64&_nc_cat=101&ccb=1-7&_nc_sid=5f2048&_nc_ohc=bBd5uR3hQLQAX-OMsks&_nc_ht=scontent.fbho1-1.fna&oh=00_AfB8AiqIJ6JlMk5uMY-JufOFppYr90g363RRqNpC4ozxow&oe=66003D2B"
-                />
-                <img
-                  class="BpostsByPeopleInfoProfile"
-                  width="24"
-                  height="24"
-                  src="https://scontent.fbho1-3.fna.fbcdn.net/v/t39.30808-1/420147483_122158820600019071_238412336956792064_n.jpg?stp=cp0_dst-jpg_p40x40&amp;_nc_cat=106&amp;ccb=1-7&amp;_nc_sid=5f2048&amp;_nc_ohc=XHQ0n4rUHmkAX_xz_0p&amp;_nc_ht=scontent.fbho1-3.fna&amp;oh=00_AfB0_IYOhlff8j-E59QSr0bNZoqDGk1l7_3ZZVtKjXQT2g&amp;oe=66005A6E"
-                />
-              </div>
-              <div class="postsByPeopleInfoName">
-                <div class="postsByPeopleInfoNameGroupName">Group Name</div>
-                <div class="postsByPeopleInfoNameUserName">
-                  <h5 class="h6">Ajay Rajput </h5>
-                  <ul class="postsByPeopleInfoNameUserNameList">
-                    <div class="postDuration">
-                      <li>2h</li>
-                    </div>
-                    <span class="GroupLogoSVG">
-                      <div><svg viewBox="0 0 16 16" width="12" height="12" fill="currentColor" title="" class=""><title>Shared with Ajay's friends</title><g fill-rule="evenodd" transform="translate(-448 -544)"><path d="M459.75 551c-1.24 0-2.25-1.121-2.25-2.5 0-1.542.863-2.5 2.25-2.5s2.25.958 2.25 2.5c0 1.379-1.01 2.5-2.25 2.5m.692 1h-1.384c-.105 0-.21.005-.312.014a.3.3 0 0 0-.186.509 5.03 5.03 0 0 1 1.44 3.53v1.147a.3.3 0 0 0 .3.3h2.015c.929 0 1.685-.756 1.685-1.685v-.257a3.562 3.562 0 0 0-3.558-3.558m-3.032 6.5h-7.82c-.877 0-1.59-.714-1.59-1.59v-.857a4.057 4.057 0 0 1 4.053-4.053h2.894a4.057 4.057 0 0 1 4.053 4.053v.856c0 .877-.713 1.591-1.59 1.591m-3.91-7.5c-1.379 0-2.5-1.346-2.5-3 0-1.879.935-3 2.5-3s2.5 1.121 2.5 3c0 1.654-1.121 3-2.5 3"></path></g></svg></div>
-                    </span>
-                  </ul>
-                </div>
-              </div>
-              <div>
-                <ul class="postsByPeopleInfoThreeDot">
-                  <span>
+        <div class="Videos nBC">
+          <img width="28" height="28" src="./SVGs/vdo.svg" alt="vdo-logo" />
 
-                    <svg viewBox="0 0 20 20" width="20" height="20" fill="currentColor" class="" style="margin-top:15px;"><g fill-rule="evenodd" transform="translate(-446 -350)"><path d="M458 360a2 2 0 1 1-4 0 2 2 0 0 1 4 0m6 0a2 2 0 1 1-4 0 2 2 0 0 1 4 0m-12 0a2 2 0 1 1-4 0 2 2 0 0 1 4 0"></path></g></svg>
-                  </span>
-                <span class="x">
-                </span>
-                </ul>
-              </div>
-            </div>
-            <div class="postsByPeopleDescription">This is my first post.</div>
-            <div class="postsByPeoplePhoto">
-               <img alt="No photo description available." class="postsByPeoplePhotoMain" referrerpolicy="origin-when-cross-origin" src="https://scontent.fbho1-1.fna.fbcdn.net/v/t39.30808-6/432787536_2049611428769656_5565076037079462609_n.jpg?stp=dst-jpg_p843x403&amp;_nc_cat=102&amp;ccb=1-7&amp;_nc_sid=5f2048&amp;_nc_ohc=7Zlj7NM4rckAX_-GJ55&amp;_nc_ht=scontent.fbho1-1.fna&amp;oh=00_AfBfdtRPaToVl1Zolv_aCLIkBTJQ10N8zvEP1nAe5kn9gQ&amp;oe=66009170"> 
-                 </div>
-            <div class="postsByPeopleLikeCommentShare">
-              <div class="emojiLCS">
-                <div class="likeImage">
-                  <img class="x16dsc37" height="18" role="presentation" src="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 16 16'%3e%3cdefs%3e%3clinearGradient id='a' x1='50%25' x2='50%25' y1='0%25' y2='100%25'%3e%3cstop offset='0%25' stop-color='%2318AFFF'/%3e%3cstop offset='100%25' stop-color='%230062DF'/%3e%3c/linearGradient%3e%3cfilter id='c' width='118.8%25' height='118.8%25' x='-9.4%25' y='-9.4%25' filterUnits='objectBoundingBox'%3e%3cfeGaussianBlur in='SourceAlpha' result='shadowBlurInner1' stdDeviation='1'/%3e%3cfeOffset dy='-1' in='shadowBlurInner1' result='shadowOffsetInner1'/%3e%3cfeComposite in='shadowOffsetInner1' in2='SourceAlpha' k2='-1' k3='1' operator='arithmetic' result='shadowInnerInner1'/%3e%3cfeColorMatrix in='shadowInnerInner1' values='0 0 0 0 0 0 0 0 0 0.299356041 0 0 0 0 0.681187726 0 0 0 0.3495684 0'/%3e%3c/filter%3e%3cpath id='b' d='M8 0a8 8 0 00-8 8 8 8 0 1016 0 8 8 0 00-8-8z'/%3e%3c/defs%3e%3cg fill='none'%3e%3cuse fill='url(%23a)' xlink:href='%23b'/%3e%3cuse fill='black' filter='url(%23c)' xlink:href='%23b'/%3e%3cpath fill='white' d='M12.162 7.338c.176.123.338.245.338.674 0 .43-.229.604-.474.725a.73.73 0 01.089.546c-.077.344-.392.611-.672.69.121.194.159.385.015.62-.185.295-.346.407-1.058.407H7.5c-.988 0-1.5-.546-1.5-1V7.665c0-1.23 1.467-2.275 1.467-3.13L7.361 3.47c-.005-.065.008-.224.058-.27.08-.079.301-.2.635-.2.218 0 .363.041.534.123.581.277.732.978.732 1.542 0 .271-.414 1.083-.47 1.364 0 0 .867-.192 1.879-.199 1.061-.006 1.749.19 1.749.842 0 .261-.219.523-.316.666zM3.6 7h.8a.6.6 0 01.6.6v3.8a.6.6 0 01-.6.6h-.8a.6.6 0 01-.6-.6V7.6a.6.6 0 01.6-.6z'/%3e%3c/g%3e%3c/svg%3e" width="18">Likes</div>
-                <div>2KComments 15K shares</div>
-              </div>
-              <div class="buttonLCS">
-                <button class="buttonLCS Like"><i data-visualcompletion="css-img" class="x1b0d499 x1d69dk1" style="background-image:url('https://static.xx.fbcdn.net/rsrc.php/v3/yW/r/iXiEGoxedPs.png');background-position:0 -1050px;background-size:26px 1500px;width:18px;height:18px;background-repeat:no-repeat;display:inline-block"></i>Like</button>
-                <button class="buttonLCS"><i data-visualcompletion="css-img" class="x1b0d499 x1d69dk1" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yW/r/iXiEGoxedPs.png&quot;); background-position: 0px -950px; background-size: 26px 1500px; width: 18px; height: 18px; background-repeat: no-repeat; display: inline-block;"></i>Comment</button>
-                <button class="buttonLCS"><i data-visualcompletion="css-img" class="x1b0d499 x1d69dk1" style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yW/r/iXiEGoxedPs.png&quot;); background-position: 0px -1110px; background-size: 26px 1500px; width: 18px; height: 18px; background-repeat: no-repeat; display: inline-block;"></i>Share</button>
-              </div>
-              <hr />
-            </div>
-          </div> 
-       
-<div class="rsv">
-<div class="reelsAndShortVideos">
-  <div class="reel reel1"></div>
-
-  <div class="reel reel2"></div>
-
-  <div class="reel reel3"></div>
-
-  <div class="reel reel4"></div>
-
-  <div class="reel reel5"></div>
-</div>
-</div>
         </div>
-        <div class="bodyRight">
-       
-          <div class="sponsored">
-            <h3>
+        <div class="Marketplace nBC">
+          <img width="28" height="28" src="./SVGs/marketplace.svg" alt="marketplace-logo" />
 
-              Sponsored
-            </h3>
-            <div class="sponsoredAd">
-              <!-- <div class="sponsoredAdlogo sal1"> -->
-                <img alt="" class="sponsoredAdlogo sal1" referrerpolicy="origin-when-cross-origin" src="https://scontent.fbho1-2.fna.fbcdn.net/v/t45.1600-4/432806816_120207788527590049_1845379367917962259_n.jpg?stp=cp0_dst-jpg_p296x100_q75_spS444&amp;_nc_cat=110&amp;ccb=1-7&amp;_nc_sid=5f2048&amp;_nc_ohc=dlZlJveP-tkAX_FRj6J&amp;_nc_ht=scontent.fbho1-2.fna&amp;oh=00_AfCnJwjwjpTNnf9XrmxLwg6Tn0mkWLLt1hBJ-nuY-kc_HA&amp;oe=660520CA">
-                
-              <!-- </div> -->
-              <div class="sponsoredAdname">Ad1</div>
-            </div>
-            <div class="sponsoredAd">
-              <!-- <div class="sponsoredAdlogo sal2"></div> -->
-              <img alt="" class="sponsoredAdlogo sal1" referrerpolicy="origin-when-cross-origin" src="https://scontent.fbho1-2.fna.fbcdn.net/v/t45.1600-4/432806816_120207788527590049_1845379367917962259_n.jpg?stp=cp0_dst-jpg_p296x100_q75_spS444&amp;_nc_cat=110&amp;ccb=1-7&amp;_nc_sid=5f2048&amp;_nc_ohc=dlZlJveP-tkAX_FRj6J&amp;_nc_ht=scontent.fbho1-2.fna&amp;oh=00_AfCnJwjwjpTNnf9XrmxLwg6Tn0mkWLLt1hBJ-nuY-kc_HA&amp;oe=660520CA">
+        </div>
+        <div class="Groups nBC">
+          <img width="28" height="28" src="./SVGs/groups.svg" alt="groups-logo" />
 
-              <div class="sponsoredAdname">Ad2</div>
-            </div>
-          </div>
+        </div>
+        <div class="Gaming nBC">
+          <img width="28" height="28" src="./SVGs/gaming.svg" alt="Gaming-logo" />
 
-          <div class="friendRequest">
-            <h4>
-              Friend Requests
-            </h4>
-            <div class="nameImage">
-              <div class="logo"></div>
-              <div class="frContainer">
-                <div class="frName"></div>
-                <h2>full name</h2>
-                <div class="frWhatToDo">
-                  <div class="frWhatToDo confirm">
-                    <button class="confirm">Confirm</button>
-                  </div>
-                  <div class="frWhatToDo delete"><button>Delete</button></div>
-                </div>
-              </div>
-            </div>
+        </div>
+      </div>
+      <div class="navBarRight">
+        <div class="Menu nBR">
+          <img width="44" height="44" src="./SVGs/Mediamodifier-Design.svg" alt="Menu-logo" />
 
-            <div class="nameImage">
-              <div class="logo"></div>
-              <div class="frContainer">
-                <div class="frName"></div>
-                <h2>full name</h2>
-                <div class="frWhatToDo">
-                  <div class="frWhatToDo confirm">
-                    <button class="confirm">Confirm</button>
-                  </div>
-                  <div class="frWhatToDo delete"><button>Delete</button></div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="Birthdays">
-            <h5>
-              Bithdays
-            </h5>
-            <div class="bdName">
-              <h7>
+        </div>
+        <div class="Messanger nBR">
+          <img width="20" height="20" src="./SVGs/Mediamodifier-Design (1).svg" alt="Messanger-logo" />
 
-                full name's birthday today
-              </h>
+        </div>
+        <div class="Notifications nBR">
+          <img width="20" height="20" src="./SVGs/Mediamodifier-Design (2).svg" alt="Notifications-logo" />
 
-            
-          </div>
-          </div>
-          <div class="Contacts">
-            <h2>
-              Contacts
-            </h2>
-
-            <div class="nameImage">
-              <div class="logo"></div>
-              <div class="nameHold">Vijay Rajput</div>
-            </div>
-
-            <div class="nameImage">
-              <div class="logo"></div>
-              <div class="nameHold">Sujal Prajapati</div>
-            </div>
-            <div class="nameImage">
-              <div class="logo"></div>
-              <div class="nameHold">Sagar Jaiswal</div>
-            </div>
-            <div class="nameImage">
-              <div class="logo"></div>
-              <div class="nameHold">Ram</div>
-            </div>
-            <div class="nameImage">
-              <div class="logo"></div>
-              <div class="nameHold">Shyam</div>
-            </div>
-            <div class="nameImage">
-              <div class="logo"></div>
-              <div class="nameHold">Alex Hales</div>
-            </div>
-            <div class="nameImage">
-              <div class="logo"></div>
-              <div class="nameHold">Elon Musk</div>
-            </div>
-            <div class="nameImage">
-              <div class="logo"></div>
-              <div class="nameHold">Mahendra singh Dhoni</div>
-            </div>
-            <div class="nameImage">
-              <div class="logo"></div>
-              <div class="nameHold">Virat Kohi</div>
-            </div>
-            <div class="nameImage">
-              <div class="logo"></div>
-              <div class="nameHold">Rohit Sharma</div>
-            </div>
-            <div class="nameImage">
-              <div class="logo">
-                <image x="0" y="0" height="100%" preserveAspectRatio="xMidYMid slice" width="100%" xlink:href="https://scontent.fbho1-4.fna.fbcdn.net/v/t39.30808-1/359445183_982967036059671_8988827424736566260_n.jpg?stp=cp0_dst-jpg_p56x56&amp;_nc_cat=104&amp;ccb=1-7&amp;_nc_sid=5f2048&amp;_nc_ohc=GvY56w-wpXgAX-5XVYS&amp;_nc_ht=scontent.fbho1-4.fna&amp;oh=00_AfB1x2RIeq9b5UvgSG8owi85jONY9Dt-5CGiUJnOdAlPtA&amp;oe=6604AC27" style="height: 36px; width: 36px;"></image>
-              </div>
-              <div class="nameHold">Himanshu Sahu</div>
-            </div>
-          </div>
-          <!-- </div> -->
+        </div>
+        <div class="Account nBR">
+          <img class="Account nBR" width="40" height="40" src="./SVGs/MyPhoto.jpg" alt="MyPhoto" />
         </div>
       </div>
     </div>
-  </body>
+    <div class="container">
+      <div class="bodyLeft">
+        <div class="nameImage">
+          <div class="logo">
+            <img class="logo" width="36px" height="36px" src="./SVGs/MyPhoto.jpg" alt="MyPhoto" />
+          </div>
+          <div class="nameHold UserNameHold">Ajay Rajput</div>
+        </div>
+
+        <div class="nameImage">
+          <div class="logo">
+            <i data-visualcompletion="css-img" class="left-logo"
+              style="background-image:url('./SVGs/MXx87JcFKzH.png');background-position:0 -304px;background-size:38px 570px;width:36px;height:36px;background-repeat:no-repeat;display:inline-block"></i>
+          </div>
+          <div class="nameHold">Friends</div>
+        </div>
+
+        <div class="nameImage">
+          <div class="logo">
+            <i data-visualcompletion="css-img" class="left-logo"
+              style="background-image:url('./SVGs/MXx87JcFKzH.png');background-position:0 -456px;background-size:38px 570px;width:36px;height:36px;background-repeat:no-repeat;display:inline-block"></i>
+
+          </div>
+          <div class="nameHold">Memories</div>
+        </div>
+
+        <div class="nameImage">
+          <div class="logo">
+            <i data-visualcompletion="css-img" class=""
+              style="background-image:url('./SVGs/MXx87JcFKzH.png');background-position:0 -190px;background-size:38px 570px;width:36px;height:36px;background-repeat:no-repeat;display:inline-block"></i>
+          </div>
+          <div class="nameHold">Saved</div>
+        </div>
+
+        <div class="nameImage">
+          <div class="logo">
+            <i data-visualcompletion="css-img" class=""
+              style="background-image:url('./SVGs/MXx87JcFKzH.png');background-position:0 -38px;background-size:38px 570px;width:36px;height:36px;background-repeat:no-repeat;display:inline-block"></i>
+          </div>
+          <div class="nameHold">Groups</div>
+        </div>
+
+        <div class="nameImage">
+          <div class="logo">
+            <i data-visualcompletion="css-img" class=""
+              style="background-image:url('./SVGs/MXx87JcFKzH.png');background-position:0 -532px;background-size:38px 570px;width:36px;height:36px;background-repeat:no-repeat;display:inline-block"></i>
+          </div>
+          <div class="nameHold">Videos</div>
+        </div>
+
+        <div class="nameImage">
+          <div class="logo">
+            <i data-visualcompletion="css-img" class=""
+              style="background-image:url('./SVGs/MXx87JcFKzH.png');background-position:0 -418px;background-size:38px 570px;width:36px;height:36px;background-repeat:no-repeat;display:inline-block"></i>
+          </div>
+          <div class="nameHold">Marketplace</div>
+        </div>
+
+        <div class="nameImage">
+          <div class="logo">
+            <img draggable="false" height="36" width="36" alt="" src="./SVGs/Feeds.png" />
+          </div>
+          <div class="nameHold">Feeds</div>
+        </div>
+
+        <div class="nameImage">
+          <div class="logo">
+            <i data-visualcompletion="css-img" class=""
+              style="background-image:url('./SVGs/vTDQ3deAsEh.png');background-position:0 -37px;background-size:auto;width:36px;height:36px;background-repeat:no-repeat;display:inline-block"></i>
+          </div>
+          <div class="nameHold">Events</div>
+        </div>
+        <div class="nameImage">
+          <div class="logo">
+            <img draggable="false" height="36" width="36" alt="" src="./SVGs/pay.png">
+          </div>
+          <div class="nameHold">Facebook Pay</div>
+        </div>
+        <div class="nameImage">
+          <div class="logo">
+            <img draggable="false" height="36" width="36" alt="" src="./SVGs/climate.png">
+          </div>
+          <div class="nameHold">Climate Science centre</div>
+        </div>
+        <div class="nameImage">
+          <div class="logo">
+            <i data-visualcompletion="css-img" height="36" width="36" class=""
+              style="background-image: url('./SVGs/MXx87JcFKzH.png'); background-position: 0px -342px; background-size: 38px 570px; width: 36px; height: 36px; background-repeat: no-repeat; display: inline-block;"></i>
+          </div>
+          <div class="nameHold">Fundraisers</div>
+        </div>
+
+        <div class="nameImage">
+          <div class="logo">
+            <img draggable="false" height="36" width="36" alt="" src="./SVGs/fundraiser.png">
+          </div>
+          <div class="nameHold">Ads Manager</div>
+        </div>
+
+        <div class="Shortcuts">
+          <h3>
+            Shortcuts
+          </h3>
+
+          <div class="nameImage">
+            <div class="logo">
+              <image style="height:36px;width:36px" x="0" y="0" height="100%" preserveAspectRatio="xMidYMid slice"
+                width="100%" src="./SVGs/xgrp.jpg"></image>
+            </div>
+            <div class="nameHold">Xgroup</div>
+          </div>
+
+          <div class="nameImage">
+            <div class="logo">
+              <image style="height:36px;width:36px" x="0" y="0" height="80%" preserveAspectRatio="xMidYMid slice"
+                width="80%" src="./SVGs/8ballpool.png"></image>
+            </div>
+            <div class="nameHold">8ballpool</div>
+          </div>
+
+          <div class="nameImage">
+            <div class="logo">
+              <image style="height:36px;width:36px" x="0" y="0" height="100%" width="100%"></image>
+            </div>
+            <div class="nameHold">Yshortcut</div>
+          </div>
+
+          <div class="nameImage">
+            <div class="logo">
+              <image style="height:36px;width:36px" x="0" y="0" height="100%" preserveAspectRatio="xMidYMid slice"
+                width="100%"></image>
+            </div>
+            <div class="nameHold">Zshortcut</div>
+          </div>
+        </div>
+      </div>
+      <div class="bodyCenter">
+        <div class="stories">
+          <div class="story story1">
+            <div class="storyImage1">
+              <img alt="" class="storyImageMain" referrerpolicy="origin-when-cross-origin" src="./SVGs/story1.jpg">
+            </div>
+            <div class="createStory">
+              <div class="createStory1">create story</div>
+            </div>
+            <div class="plusIcon">
+              <svg viewBox="0 0 20 20" width="32" height="32" fill="currentColor" class=""
+                style="--color: var(--always-white)">
+                <g fill-rule="evenodd" transform="translate(-446 -350)">
+                  <g fill-rule="nonzero">
+                    <path d="M95 201.5h13a1 1 0 1 0 0-2H95a1 1 0 1 0 0 2z" transform="translate(354.5 159.5)"></path>
+                    <path d="M102.5 207v-13a1 1 0 1 0-2 0v13a1 1 0 1 0 2 0z" transform="translate(354.5 159.5)"></path>
+                  </g>
+                </g>
+              </svg>
+            </div>
+          </div>
+          <div class="story story2">
+            <div>
+              <img class="storyLogo" alt="" src="./SVGs/logo2.jpg">
+            </div>
+            <div class="storyImage1">
+              <img alt="" class="storyImage" referrerpolicy="origin-when-cross-origin" src="./SVGs/story2.jpg">
+            </div>
+            <div class="storyName">Sharad Saxena</div>
+          </div>
+          <div class="story story3">
+            <div>
+              <img class="storyLogo" alt="" src="./SVGs/logo3.jpg">
+            </div>
+            <div class="storyImage1">
+              <img alt="" class="storyImage" referrerpolicy="origin-when-cross-origin" src="./SVGs/story3.jpg">
+
+            </div>
+            <div class="storyName">Sourabh Rawat</div>
+
+          </div>
+          <div class="story story4">
+            <div>
+              <img class="storyLogo" alt="" src="./SVGs/logo4.jpg">
+            </div>
+            <div class="storyImage1"> <img alt="" class="storyImage" referrerpolicy="origin-when-cross-origin"
+                src="./SVGs/story4.jpg">
+            </div>
+            <div class="storyName">Mohit Garg</div>
+
+          </div>
+          <div class="story story5">
+            <img class="storyLogo" alt="" src="./SVGs/logo4.jpg">
+            <div class="storyImage1"> <img alt="" class="storyImage" referrerpolicy="origin-when-cross-origin"
+                src="./SVGs/story5.jpg">
+            </div>
+            <div class="storyName">Hariom Rajput</div>
+
+          </div>
+        </div>
+        <div class="createPost">
+          <div class="postBarUP">
+            <div>
+              <image class="logo" style="height: 36px; width: 36px;" height="100%" width="100%"
+                src="./SVGs/MyPhoto.jpg">
+              </image>
+            </div>
+            <input type="text" class="postBarUPWriting" value="What's on your mind, Ajay? " />
+          </div>
+          <div class="postBarDown">
+            <div class="pbdButtonLogo" role="button">
+              <img src="./SVGs/videoSvg.png" width="24" height="24" />
+              <button class="pbd-button">Live video</button>
+            </div>
+            <div class="pbdButtonLogo">
+              <img src="./SVGs/photoVdo.png" width="24" height="24" />
+              <button class="pbd-button">Photo/video</button>
+            </div>
+            <div class="pbdButtonLogo">
+              <img src="./SVGs/Feeling.png" width="24" height="24" />
+              <button class="pbd-button">feeling/activity</button>
+            </div>
+          </div>
+        </div>
+        <div class="postsByPeople">
+          <div class="postsByPeopleInfo">
+            <div class="postsByPeopleInfoProfile">
+              <img class="ApostsByPeopleInfoProfile logo" width="36" height="36" src="./SVGs/GrpImage.jpg" alt="" />
+              <img class="BpostsByPeopleInfoProfile" width="24" height="24" src="./SVGs/grpimage2.jpg" />
+            </div>
+            <div class="postsByPeopleInfoName">
+              <div class="postsByPeopleInfoNameGroupName">Group Name</div>
+              <div class="postsByPeopleInfoNameUserName">
+                <h5 class="h6">Ajay Rajput </h5>
+                <ul class="postsByPeopleInfoNameUserNameList">
+                  <div class="postDuration">
+                    <li>2h</li>
+                  </div>
+                  <span class="GroupLogoSVG">
+                    <div><img width="12" height="12" src="./SVGs/grpSvg.svg"></div>
+                  </span>
+                </ul>
+              </div>
+            </div>
+            <div>
+              <ul class="postsByPeopleInfoThreeDot">
+                <span>
+
+                  <svg viewBox="0 0 20 20" width="20" height="20" fill="currentColor" class="" style="margin-top:15px;">
+                    <g fill-rule="evenodd" transform="translate(-446 -350)">
+                      <path
+                        d="M458 360a2 2 0 1 1-4 0 2 2 0 0 1 4 0m6 0a2 2 0 1 1-4 0 2 2 0 0 1 4 0m-12 0a2 2 0 1 1-4 0 2 2 0 0 1 4 0">
+                      </path>
+                    </g>
+                  </svg>
+                </span>
+                <span class="x">
+                </span>
+              </ul>
+            </div>
+          </div>
+          <div class="postsByPeopleDescription">This is my first post.</div>
+          <div class="postsByPeoplePhoto">
+            <img alt="No photo description available." class="postsByPeoplePhotoMain"
+              referrerpolicy="origin-when-cross-origin" src="./SVGs/GrpMainPhoto.jpg">
+          </div>
+          <div class="postsByPeopleLikeCommentShare">
+            <div class="emojiLCS">
+              <div class="likeImage">
+                <img class="x16dsc37" height="18" role="presentation" src="./SVGs/LikeSVg.svg" width="18">Likes
+              </div>
+              <div>2KComments 15K shares</div>
+            </div>
+            <div class="buttonLCS">
+              <button class="buttonLCS Like"><i data-visualcompletion="css-img" class="x1b0d499 x1d69dk1"
+                  style="background-image:url('./SVGs/likecommentshare.png');background-position:0 -1050px;background-size:26px 1500px;width:18px;height:18px;background-repeat:no-repeat;display:inline-block"></i>Like</button>
+              <button class="buttonLCS Comment"><i data-visualcompletion="css-img" class="x1b0d499 x1d69dk1"
+                  style="background-image: url(./SVGs/likecommentshare.png); background-position: 0px -950px; background-size: 26px 1500px; width: 18px; height: 18px; background-repeat: no-repeat; display: inline-block;"></i>Comment</button>
+              <button class="buttonLCS Share"><i data-visualcompletion="css-img" class="x1b0d499 x1d69dk1"
+                  style="background-image: url(./SVGs/likecommentshare.png); background-position: 0px -1110px; background-size: 26px 1500px; width: 18px; height: 18px; background-repeat: no-repeat; display: inline-block;"></i>Share</button>
+            </div>
+            <hr />
+          </div>
+        </div>
+
+        <div class="rsv">
+          <div class="reelsAndShortVideos">
+            <div class="reels">
+              <img class="reel reel1" src="./SVGs/reel1.jpg" />
+              <div class="viewCount"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                  fill="none" stroke="currentColor" stroke-width="2.625" stroke-linecap="round" stroke-linejoin="round"
+                  class="lucide lucide-play">
+                  <polygon points="6 3 20 12 6 21 6 3" />
+                </svg>
+                17M</div>
+            </div>
+
+            <div class="reels">
+              <img class="reel reel1" src="./SVGs/reel2.jpg" />
+              <div class="viewCount"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                  fill="none" stroke="currentColor" stroke-width="2.625" stroke-linecap="round" stroke-linejoin="round"
+                  class="lucide lucide-play">
+                  <polygon points="6 3 20 12 6 21 6 3" />
+                </svg>
+                178K</div>
+            </div>
+            <div class="reels">
+              <img class="reel reel1" src="./SVGs/reel3.jpg" />
+              <div class="viewCount"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                  fill="none" stroke="currentColor" stroke-width="2.625" stroke-linecap="round" stroke-linejoin="round"
+                  class="lucide lucide-play">
+                  <polygon points="6 3 20 12 6 21 6 3" />
+                </svg>
+                32M</div>
+            </div>
+            <div class="reels">
+              <img class="reel reel1" src="./SVGs/reel4.jpg" />
+              <div class="viewCount"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                  fill="none" stroke="currentColor" stroke-width="2.625" stroke-linecap="round" stroke-linejoin="round"
+                  class="lucide lucide-play">
+                  <polygon points="6 3 20 12 6 21 6 3" />
+                </svg>
+                300K</div>
+            </div>
+            <div class="reels">
+              <img class="reel reel1" src="./SVGs/reel5.jpg" />
+              <div class="viewCount"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                  fill="none" stroke="currentColor" stroke-width="2.625" stroke-linecap="round" stroke-linejoin="round"
+                  class="lucide lucide-play">
+                  <polygon points="6 3 20 12 6 21 6 3" />
+                </svg>
+                4M</div>
+            </div>
+          </div>
+        </div>
+        <div class="postsByPeople">
+          <div class="postsByPeopleInfo">
+            <div class="postsByPeopleInfoProfile">
+              <img class="ApostsByPeopleInfoProfile logo" width="36" height="36" src="./SVGs/GrpImage.jpg" alt="" />
+              <img class="BpostsByPeopleInfoProfile" width="24" height="24" src="./SVGs/grpimage2.jpg" />
+            </div>
+            <div class="postsByPeopleInfoName">
+              <div class="postsByPeopleInfoNameGroupName">Group Name</div>
+              <div class="postsByPeopleInfoNameUserName">
+                <h5 class="h6">Ajay Rajput </h5>
+                <ul class="postsByPeopleInfoNameUserNameList">
+                  <div class="postDuration">
+                    <li>2h</li>
+                  </div>
+                  <span class="GroupLogoSVG">
+                    <div><img width="12" height="12" src="./SVGs/grpSvg.svg"></div>
+                  </span>
+                </ul>
+              </div>
+            </div>
+            <div>
+              <ul class="postsByPeopleInfoThreeDot">
+                <span>
+
+                  <svg viewBox="0 0 20 20" width="20" height="20" fill="currentColor" class="" style="margin-top:15px;">
+                    <g fill-rule="evenodd" transform="translate(-446 -350)">
+                      <path
+                        d="M458 360a2 2 0 1 1-4 0 2 2 0 0 1 4 0m6 0a2 2 0 1 1-4 0 2 2 0 0 1 4 0m-12 0a2 2 0 1 1-4 0 2 2 0 0 1 4 0">
+                      </path>
+                    </g>
+                  </svg>
+                </span>
+                <span class="x">
+                </span>
+              </ul>
+            </div>
+          </div>
+          <div class="postsByPeopleDescription">This is my second post.</div>
+          <div class="postsByPeoplePhoto">
+            <img alt="No photo description available." class="postsByPeoplePhotoMain"
+              referrerpolicy="origin-when-cross-origin" src="./SVGs/GrpMainPhoto2.jpg">
+          </div>
+          <div class="postsByPeopleLikeCommentShare">
+            <div class="emojiLCS">
+              <div class="likeImage">
+                <img class="x16dsc37" height="18" role="presentation" src="./SVGs/LikeSVg.svg" width="18">Likes
+              </div>
+              <div>5KComments 65K shares</div>
+            </div>
+            <div class="buttonLCS">
+              <button class="buttonLCS Like"><i data-visualcompletion="css-img" class="x1b0d499 x1d69dk1"
+                  style="background-image:url('./SVGs/likecommentshare.png');background-position:0 -1050px;background-size:26px 1500px;width:18px;height:18px;background-repeat:no-repeat;display:inline-block"></i>Like</button>
+              <button class="buttonLCS Comment"><i data-visualcompletion="css-img" class="x1b0d499 x1d69dk1"
+                  style="background-image: url(./SVGs/likecommentshare.png); background-position: 0px -950px; background-size: 26px 1500px; width: 18px; height: 18px; background-repeat: no-repeat; display: inline-block;"></i>Comment</button>
+              <button class="buttonLCS Share"><i data-visualcompletion="css-img" class="x1b0d499 x1d69dk1"
+                  style="background-image: url(./SVGs/likecommentshare.png); background-position: 0px -1110px; background-size: 26px 1500px; width: 18px; height: 18px; background-repeat: no-repeat; display: inline-block;"></i>Share</button>
+            </div>
+            <hr />
+          </div>
+        </div>
+      </div>
+      <div class="bodyRight">
+
+        <div class="sponsored">
+          <h3>
+
+            Sponsored
+          </h3>
+          <div class="sponsoredAd">
+            <!-- <div class="sponsoredAdlogo sal1"> -->
+            <img alt="" class="sponsoredAdlogo sal1" referrerpolicy="origin-when-cross-origin" src="./SVGs/Ad1.jpg">
+
+            <!-- </div> -->
+            <div class="sponsoredAdname">Ad1</div>
+          </div>
+          <div class="sponsoredAd">
+            <!-- <div class="sponsoredAdlogo sal2"></div> -->
+            <img alt="" class="sponsoredAdlogo sal1" referrerpolicy="origin-when-cross-origin" src="./SVGs/Ad2.jpg">
+
+            <div class="sponsoredAdname">Ad2</div>
+          </div>
+        </div>
+
+        <div class="friendRequest">
+          <h4>
+            Friend Requests
+          </h4>
+          <div class="nameImage">
+            <img alt="" class="logo" src="./SVGs/fr1.jpg">
+            <div class="frContainer">
+              <div class="frName"></div>
+              <h2>full name</h2>
+              <div class="frWhatToDo">
+                <div class="frWhatToDo confirm">
+                  <button class="confirm">Confirm</button>
+                </div>
+                <div class="frWhatToDo delete"><button>Delete</button></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="nameImage">
+            <img alt="" class="logo" src="./SVGs/fr2.jpg">
+            <div class="frContainer">
+              <div class="frName"></div>
+              <h2>full name</h2>
+              <div class="frWhatToDo">
+                <div class="frWhatToDo confirm">
+                  <button class="confirm">Confirm</button>
+                </div>
+                <div class="frWhatToDo delete"><button>Delete</button></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="Birthdays">
+          <h5>
+            Bithdays
+          </h5>
+          <div class="bdName">
+            <h7>
+
+              full name's birthday today
+              </h>
+
+
+          </div>
+        </div>
+        <div class="Contacts">
+          <h2>
+            Contacts
+          </h2>
+
+          <div class="nameImage">
+            <img alt="" class="logo" src="./SVGs/fr3.jpg">
+            <div class="nameHold">Vijay Rajput</div>
+          </div>
+
+          <div class="nameImage">
+            <img alt="" class="logo" src="./SVGs/fr4.jpg">
+            <div class="nameHold">Sujal Prajapati</div>
+          </div>
+          <div class="nameImage">
+            <img alt="" class="logo" src="./SVGs/fr5.jpg">
+            <div class="nameHold">Sagar Jaiswal</div>
+          </div>
+          <div class="nameImage">
+            <img alt="" class="logo" src="./SVGs/fr6.jpg">
+            <div class="nameHold">Ram</div>
+          </div>
+          <div class="nameImage">
+            <img alt="" class="logo" src="./SVGs/fr7.jpg">
+            <div class="nameHold">Shyam</div>
+          </div>
+          <div class="nameImage">
+            <img alt="" class="logo" src="./SVGs/fr5.jpg">
+            <div class="nameHold">Alex Hales</div>
+          </div>
+          <div class="nameImage">
+            <img alt="" class="logo" src="./SVGs/fr6.jpg">
+            <div class="nameHold">Elon Musk</div>
+          </div>
+          <div class="nameImage">
+            <img alt="" class="logo" src="./SVGs/fr7.jpg">
+            <div class="nameHold">Mahendra singh Dhoni</div>
+          </div>
+          <div class="nameImage">
+            <img alt="" class="logo" src="./SVGs/fr8.jpg">
+            <div class="nameHold">Virat Kohi</div>
+          </div>
+          <div class="nameImage">
+            <img alt="" class="logo" src="./SVGs/fr9.jpg">
+            <div class="nameHold">Rohit Sharma</div>
+          </div>
+          <div class="nameImage">
+            <img alt="" class="logo" src="./SVGs/fr10.jpg">
+
+            <div class="nameHold">Himanshu Sahu</div>
+          </div>
+          <div class="nameImage">
+            <img alt="" class="logo" src="./SVGs/fr11.jpg">
+
+            <div class="nameHold">Akshat Garg</div>
+          </div>
+        </div>
+        <!-- </div> -->
+      </div>
+    </div>
+  </div>
+</body>
+
 </html>

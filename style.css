@@ -3,29 +3,35 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 ::-webkit-scrollbar {
   display: none;
   width: 0;
 }
+
 input:focus {
   outline: none;
   border: none;
 }
+
 *button:hover {
   cursor: pointer !important;
 }
+
 body,
 html {
   width: 100vw;
   height: 100vh;
   background-color: #f0f2f5;
 }
+
 .box {
   /* display: flex;
   flex-direction: column; */
   width: 100vw;
   height: 100vh;
 }
+
 .navBar {
   width: 100vw;
   height: 56px;
@@ -52,6 +58,7 @@ html {
     /* justify-content: center;
     align-items: center; */
   }
+
   > .navBarRight {
     margin: 5px;
     padding: 5px;
@@ -71,20 +78,24 @@ html {
   border-radius: 50%;
   margin-right: 5px;
 }
+
 *.logo:hover {
   cursor: pointer;
 }
+
 .SearchBardiv {
   display: flex;
   padding: 5px;
   min-width: 80%;
 }
+
 .searchSVG {
   display: flex;
   align-items: center;
   background-color: #f0f2f5;
   border-radius: 15px 0 0 15px;
 }
+
 .SearchBar {
   width: 100%;
   height: 30px;
@@ -93,12 +104,14 @@ html {
   border-radius: 0 15px 15px 0;
   color: gray;
 }
+
 .nBC {
   width: 20%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 .navBarCenter :hover {
   background-color: #f1efef;
   border-radius: 5px;
@@ -106,6 +119,7 @@ html {
   transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
   cursor: pointer;
 }
+
 .nBR {
   width: 40px;
   height: 40px;
@@ -116,6 +130,7 @@ html {
   align-items: center;
   justify-content: center;
 }
+
 .container {
   display: flex;
   height: calc(100vh - 56px);
@@ -131,6 +146,7 @@ html {
   flex-direction: column;
   background-color: #f0f2f5;
 }
+
 .bodyRight {
   padding: 0 8px;
   width: 360px;
@@ -142,6 +158,7 @@ html {
   flex-direction: column;
   overflow-y: auto;
 }
+
 .bodyCenter {
   width: 50vw;
   max-width: 590px;
@@ -159,18 +176,22 @@ html {
   justify-content: flex-start;
   margin-bottom: 10px;
 }
+
 *.nameImage:hover {
   cursor: pointer;
   background-color: hwb(0 90% 9%);
   transition: cubic-bezier(0.6, 0.04, 0.98, 0.335);
 }
+
 .UserNameHold {
   font-weight: 600;
   font-size: larger;
 }
+
 .Shortcuts {
   margin-top: 10px;
 }
+
 .sponsoredAd {
   width: 100%;
   display: flex;
@@ -178,6 +199,7 @@ html {
   justify-content: flex-start;
   align-items: stretch;
 }
+
 .sponsoredAdlogo {
   width: 72px;
   height: 72px;
@@ -191,15 +213,18 @@ html {
   border-radius: 10px;
   margin: 5px;
 }
+
 .sal2 {
   height: 50px;
   width: 50px;
 }
+
 .frWhatToDo {
   display: flex;
   margin: 3px;
   align-items: stretch;
 }
+
 h2 {
   margin: 2px;
 }
@@ -209,9 +234,11 @@ h2 {
   background-color: rgb(27, 89, 234);
   padding: 0 5px;
 }
+
 .delete {
   background-color: #f1f1f1;
 }
+
 .bdName {
   height: 70px;
   width: auto;
@@ -228,26 +255,33 @@ h2 {
   min-height: 250px;
   border-radius: 15px;
 }
+
 .story {
-  background-color: black;
+  position: relative;
   height: 250px;
   margin: 0 10px;
   min-width: 140px;
   border-radius: 10px;
 }
+
 .story1 {
   display: flex;
   position: relative;
   flex-direction: column;
   margin-left: 2px;
 }
-.storyImage {
-  border-radius: 10px 10px 0 0;
+
+.storyImageMain {
+  width: 140px;
   height: 200px;
+}
+
+.storyImage {
   width: 140px;
   object-fit: cover;
   overflow-x: hidden;
 }
+
 .createStory {
   text-align: center;
   background-color: gray;
@@ -255,6 +289,7 @@ h2 {
   height: 50px;
   width: 140px;
 }
+
 .createStory1 {
   position: relative;
   top: 20px;
@@ -266,20 +301,28 @@ h2 {
   height: 32px;
   width: 32px;
   position: absolute;
-  top: 184px;
+  top: 189px;
   left: 54px;
   border-radius: 50%;
 }
+
 .storyLogo {
   width: 32px;
   height: 32px;
   background-color: violet;
   border: 4px solid blue;
   border-radius: 50%;
-  position: relative;
+  position: absolute;
   left: 10px;
   top: 10px;
 }
+
+.storyName {
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+}
+
 .createPost {
   width: 100%;
   margin: 10px 0;
@@ -289,11 +332,13 @@ h2 {
   flex-direction: column;
   border-radius: 5px;
 }
+
 .postBarUP {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
 }
+
 .postBarUPWriting {
   width: 90%;
   height: 27px;
@@ -304,6 +349,7 @@ h2 {
   color: gray;
   padding: 8px 12px;
 }
+
 .postBarDown {
   display: flex;
   justify-content: space-around;
@@ -311,52 +357,68 @@ h2 {
   justify-content: space-evenly;
   margin: 10px;
 }
+
 .pbdButtonLogo {
   display: flex;
   align-items: center;
   justify-content: stretch;
 }
+
 .pbd-button {
   margin: 5px;
 }
+
 button {
   background-color: transparent;
   height: 30px;
   border: none;
 }
+
 .postBarDown :hover {
   cursor: pointer;
-  background-color: f1efef;
+  background-color: #f1efef;
 }
+
+.pbdButtonLogo:hover {
+  border-radius: 5px;
+}
+
 .postsByPeople {
   width: 100%;
   background-color: white;
   margin-bottom: 10px;
 }
+
 .postsByPeopleInfo {
   display: grid;
   grid-template-columns: 48px auto 85px;
 }
+
 .postsByPeopleInfoProfile {
   position: relative;
 }
+
 .BpostsByPeopleInfoProfile {
   position: absolute;
   border-radius: 50%;
   right: 10px;
   top: 18px;
 }
+
 .postsByPeopleInfoName {
   display: grid;
   grid-template-rows: auto auto;
 }
+
 .postsByPeopleInfoNameUserName {
   display: flex;
   color: gray;
 }
+
 .h6 {
   margin: 0;
 }
+
 .postsByPeopleInfoNameUserNameList {
   display: flex;
   /* font-size: 10px;
@@ -364,12 +426,15 @@ button {
   top: -10px;
   left: -30px; */
 }
+
 .postDuration {
   margin-left: 27px;
 }
+
 .GroupLogoSVG {
   padding-left: 5px;
 }
+
 .x {
   position: relative;
   margin-top: 15px;
@@ -383,15 +448,18 @@ button {
   background-repeat: no-repeat;
   display: inline-block;
 }
+
 .postsByPeopleDescription {
   min-height: 30px;
   height: auto;
 }
+
 .postsByPeoplePhoto {
   display: flex;
   justify-content: center;
   overflow: hidden;
 }
+
 .postsByPeoplePhotoMain {
   display: flex;
   width: 100%;
@@ -400,6 +468,7 @@ button {
   /* min-width: 500px; */
   /* width: calc((100vh + -325px) * 0.6666666666666666); */
 }
+
 .postsByPeopleLikeCommentShare {
   display: flex;
   flex-direction: column;
@@ -407,30 +476,48 @@ button {
   height: auto;
   background-color: whitesmoke;
 }
+
 .emojiLCS {
   width: 100%;
   display: flex;
   justify-content: space-between;
   height: auto;
   padding: 8px;
+
   > .likeImage {
     display: flex;
     align-items: center;
   }
 }
+
 .buttonLCS {
   display: flex;
   /* font-size: larger; */
   color: gray;
   justify-content: space-evenly;
   align-items: center;
+
+  > .Like,
+  .Comment,
+  .Share {
+    width: 80px;
+    border-radius: 5px;
+  }
+
+  > .Like:hover,
+  .Comment:hover,
+  .Share:hover {
+    background-color: #cccbcb;
+  }
 }
+
 .rsv {
   padding-bottom: 10px;
   width: 100%;
   height: auto;
   min-height: 270px;
 }
+
 .reelsAndShortVideos {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -444,6 +531,14 @@ button {
   margin-bottom: 10px;
   /* padding: 5px; */
 }
+
+.reels {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .reel {
   background-color: palevioletred;
   /* background-color: black; */
@@ -451,4 +546,11 @@ button {
   margin: 0 10px;
   min-width: 140px;
   border-radius: 10px;
+}
+
+.viewCount {
+  position: absolute;
+  color: #f0f2f5;
+  bottom: 15px;
+  left: 20px;
 }
